@@ -183,11 +183,11 @@ p,h1,h2,h3{
 
 .container{
     max-width: 100%;
-    max-height: 100vh;
+    /* max-height: 100vh; */
 }
 
 .main-content{
-    height: 85vh;
+    min-height: 85vh;
     border-radius: 10px;
     border: 1px solid grey;
     margin: 10px 10px 0 10px;
