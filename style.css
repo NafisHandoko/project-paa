@@ -9,10 +9,6 @@ body{
     padding: 0;
 }
 
-label{
-    font-size: 32px;
-}
-
 p,h1,h2,h3{
     margin: 0;
     padding: 0;
@@ -189,6 +185,112 @@ p,h1,h2,h3{
 }
 
 .main-content{
-    background-color: aqua;
-    height: 100%;
+    height: 85vh;
+    border-radius: 10px;
+    border: 1px solid grey;
+    margin: 10px 10px 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
+.content{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 0 60px;
+}
+
+.input{
+  flex: 1;
+}
+
+.instruction-detail{
+  flex: 1;
+}
+
+.input, .instruction-detail{
+  padding: 0 40px;
+}
+
+.instruction-text{
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 10px;
+  height: 100%;
+}
+
+/* Select  */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+select {
+  /* A reset of styles, including removing the default dropdown arrow */
+  appearance: none;
+  /* Additional resets for further consistency */
+  /* background-color: transparent; */
+  border: none;
+  padding: 0 1em 0 0;
+  margin: 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+  /* outline: none; */
+}
+
+/* .select-agen-bank, .select-instruction, .virtual-acc-input{
+  margin-bottom: 20px;
+} */
+
+.agen-bank, .instruction, #virtual-acc-num{
+  margin: 5px 0 20px 0;
+}
+
+.agen-bank, .instruction {
+  width: 100%;
+  min-width: 15ch;
+  /* max-width: 30ch; */
+  border: 1px solid var(--color1);
+  border-radius: 10px;
+  padding: 10px 0.5em;
+  /* font-size: 1.25rem; */
+  cursor: pointer;
+  line-height: 1.1;
+  background-color: #fff;
+  background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+  display: grid;
+  grid-template-areas: "select";
+  align-items: center;
+}
+
+.agen-bank::after, .instruction::after {
+  content: "";
+  width: 0.8em;
+  height: 0.5em;
+  background-color: var(--color1);
+  clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+  justify-self: end;
+}
+
+select,
+.agen-bank:after,.instruction::after {
+  grid-area: select;
+}
+
+.virtual-acc-input{
+  display: flex;
+  flex-direction: column;
+}
+
+#virtual-acc-num{
+  border: 1px solid var(--color1);
+  border-radius: 10px;
+  padding: 10px 0.5em;
+}
+
