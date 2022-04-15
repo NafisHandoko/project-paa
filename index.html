@@ -50,7 +50,51 @@
             </div>
         </div>
         <div class="main-content">
-            tes
+            <div class="content">
+                <div class="input">
+                    <div class="virtual-acc-input">
+                        <label for="virtual-acc-num">Nomor akun virtual</label>
+                        <input type="text" name="virtual-acc-num" id="virtual-acc-num" disabled value="3333 4444 5555 6666">
+                    </div>
+                    <div class="select-agen-bank">
+                        <label for="agen-bank">Pilih Agen/Bank</label>
+                        <div class="agen-bank">
+                            <select name="agen-bank" id="agen-bank">
+                                <option value="empty">-</option>
+                                <optgroup label="Agen">
+                                    <option value="alfamidi">Alfamidi</option>
+                                    <option value="alfamart">Alfamart</option>
+                                    <option value="indomaret">Indomaret</option>
+                                </optgroup>
+                                <optgroup label="Bank">
+                                    <option value="bni">BNI</option>
+                                    <option value="bri">BRI</option>
+                                    <option value="mandiri">Bank Mandiri</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="select-instruction">
+                        <label for="instruction">Instruksi Pembayaran</label>
+                        <div class="instruction">
+                            <select name="instruction" id="instruction">
+                                <option value="empty">-</option>
+                                <option value="bni-mobile">BNI Mobile Banking</option>
+                                <option value="bni-internet">BNI Internet Banking</option>
+                                <option value="bni-atm">ATM BNI</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="instruction-detail">
+                    <div class="instruction-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero mollitia deleniti ex saepe
+                        adipisci aperiam voluptates assumenda itaque velit odit, quos, est atque dignissimos corrupti,
+                        possimus laboriosam facere fugit. Exercitationem.
+                    </div>
+                </div>
+            </div>
+            <button class="btn-confirm">Konfirmasi</button>
         </div>
     </div>
 </body>
